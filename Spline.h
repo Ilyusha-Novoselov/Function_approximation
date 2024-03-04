@@ -6,13 +6,13 @@
 
 namespace Com_Methods
 {
-	//абстрактный класс сплайна
+	//Р°Р±СЃС‚СЂР°РєС‚РЅС‹Р№ РєР»Р°СЃСЃ СЃРїР»Р°Р№РЅР°
 	class Spline
 	{
 	public:
-		//обновить сплайн
+		//РѕР±РЅРѕРІРёС‚СЊ СЃРїР»Р°Р№РЅ
 		virtual void Update_Spline(const std::vector<Point> &Points, const std::vector<double> &F_Value) = 0;
-		//вычислить значение сплайна в точке P
+		//РІС‹С‡РёСЃР»РёС‚СЊ Р·РЅР°С‡РµРЅРёРµ СЃРїР»Р°Р№РЅР° РІ С‚РѕС‡РєРµ P
 		virtual void Get_Value(const Point &P, double * Res)const = 0;
 	};
 }
